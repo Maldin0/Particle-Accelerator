@@ -11,7 +11,7 @@
 
 <body>
     <a-scene>
-        <a-sky color="#acf"></a-sky>
+        <a-sky src="./Street View 360.jpg"></a-sky>
         <a-camera position="0 1 7" rotation="0 0 0"></a-camera>
         <a-light type="directional" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
         <a-box position="7 0 -3" color="grey" rotation="0 0 0" light="type: point; intensity: 0;"
@@ -25,7 +25,8 @@
                            easing: easeInQuart;
                            dir: alternate">
         </a-box>
-        <a-plane position="0 -0.5 0" rotation="-90 0 0" width="500" height="500" color="#75a9c7"></a-plane>
+        <a-gltf-model src = './scene.gltf' width = '30' position = '0 0 0'></a-gltf-model>
+        <a-text value="May I go though?" width="10" position="-2 2 0"></a-text>
     </a-scene>
     <script src="index.js"></script>
 
